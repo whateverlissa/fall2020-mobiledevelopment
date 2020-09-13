@@ -1,11 +1,13 @@
 // Import Component
-import Component from './Component.js';
+
+var Component =  require('./Component.js');
 
 // Article is a child object of Component
-class Article extends Component {
+  class Article extends Component.component{
 
   constructor (props) {
     // Send what it gets to its parent object
+    super(props);
   }
 
   render () {
@@ -24,4 +26,4 @@ class Article extends Component {
 
 }
 
-export default Article;
+module.exports = {article};
