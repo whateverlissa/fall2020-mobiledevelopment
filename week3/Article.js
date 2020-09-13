@@ -3,7 +3,7 @@
 var Component =  require('./Component.js');
 
 // Article is a child object of Component
-  class Article extends Component.component{
+  class Article extends Component.Component{
 
   constructor (props) {
     // Send what it gets to its parent object
@@ -26,4 +26,4 @@ var Component =  require('./Component.js');
 
 }
 
-module.exports = {article};
+module.exports = {Article};

@@ -17,4 +17,4 @@ class Component {
   }
 }
 
-module.exports = {component};
+module.exports = { Component };
