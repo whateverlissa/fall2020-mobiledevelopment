@@ -1,4 +1,4 @@
-@@ -0,0 +1,27 @@
+//@@ -0,0 +1,27 @@
  // Import Component
  import Component from './Component.js';
 
@@ -7,6 +7,7 @@
 
    constructor (props) {
      // Send what it gets to its parent object
+     super(props);
    }
 
    render () {
@@ -14,9 +15,9 @@
      // Use template literals for the variables
      return (`
        <Article>
-         <Title>this.props.title</Title>
-         <Author>this.props.author</Author>
-         <Text>this.props.text</Text>
+         <Title>${this.props.title}</Title>
+         <Author>${this.props.author}</Author>
+         <Text>${this.props.text}</Text>
        </Article>
      `
      );
