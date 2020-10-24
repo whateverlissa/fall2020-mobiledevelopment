@@ -27,4 +27,22 @@ class App extends Component {
 }
 }
 
+class Time extends Component {
+  render() {
+    return
+var d = new Date(2018, 11, 24);
+document.getElementById("demo").innerHTML = d;
+
+}
+}
+class Time extends Component {
+  render() {
+    return
+<div id="clock">
+  <div id="hour"><img src="images/hourHand.png" /></div>
+  <div id="minute"><img src="images/minuteHand.png" /></div>
+  <div id="second"><img src="images/secondHand.png" /></div>
+</div>
+}
+}
 export default App;
